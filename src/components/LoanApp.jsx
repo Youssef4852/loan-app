@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./LoanApp.css";
-import Modal from "./modal";
+import Modal from "./Modal";
 import MyComponents from "./MyComponents";
 import { loanFormContext } from "./context/loanFormInputs";
 
