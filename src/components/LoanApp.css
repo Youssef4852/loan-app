@@ -1,0 +1,95 @@
+.loan-app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "system-ui";
+}
+.loan-app form {
+  background-color: rgba(255, 255, 255, 0.070);
+  box-shadow: 0 0 40px #1bd64396;
+  border-radius: 10px;
+  padding: 20px;
+  width: 85%;
+  max-width: 700px;
+  text-align: center;
+}
+.loan-app form h1 {
+  font-size: 45px;
+}
+.loan-app form hr {
+  margin: 15px 0;
+  border-color: #444;
+}
+.loan-app form div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.loan-app form div input {
+  padding: 10px 10px;
+  border-radius: 3px;
+  width: 100%;
+  background-color: #333;
+  border: none;
+  outline: none;
+  border-width: 2px;
+  color: #fff;
+}
+.loan-app form .check {
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 20px 20px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+}
+.loan-app form .check:has(input:checked) label,
+.loan-app form .check label:hover,
+.loan-app form div label:hover {
+  color: #36b33d;
+  cursor: pointer;
+}
+.loan-app form .check input {
+  width: fit-content;
+  accent-color: #1bd644;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+.loan-app form div select {
+  outline-color: #36b33d;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.loan-app form button[type="submit"] {
+  background-color: #888;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  margin: 10px;
+}
+.loan-app form button[type="submit"].valid {
+  background-color: #36b33d;
+  cursor: pointer;
+  pointer-events: all;
+  transition: all .2s ease-in-out;
+}
+.loan-app form button[type="submit"].valid:hover {
+  background-color: #36a03b;
+}
+.loan-app form button[type="submit"].valid:active {
+  background-color: #36b33d;
+}
